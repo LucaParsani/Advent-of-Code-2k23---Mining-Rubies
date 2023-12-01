@@ -3,9 +3,9 @@
 
 file = File.new("C:\\Users\\luca\\Desktop\\input.txt", "r")
 
-def wordsToNumbers(line)                        #replaces number words with numbers
-  line = line.gsub("one", "one1one")                #also prepends and appends the number word not to
-  line = line.gsub("two", "two2two")                #preclude finding colliding numbers, e.g. twone
+def wordsToNumbers(line)                        # replaces number words with numbers
+  line = line.gsub("one", "one1one")                # also prepends and appends the number word not to
+  line = line.gsub("two", "two2two")                # preclude finding colliding numbers, e.g. twone
   line = line.gsub("three", "three3three")
   line = line.gsub("four", "four4four")
   line = line.gsub("five", "five5five")
@@ -27,8 +27,8 @@ while line
   else
     print line
     line = wordsToNumbers(line)
-    line = line.gsub(/[a-z\n]/,"")        #removes letters and newlines
-    line = line[0] << line[-1]            #concatenates the first digit with the last
+    line = line.gsub(/[a-z\n]/,"")        # removes letters and newlines
+    line = line[0] << line[-1]            # concatenates the first digit with the last
     print line, "\n"
     sum += line.to_i
   end
