@@ -12,8 +12,8 @@ while line
   rescue EOFError
     break
   else
-    line = line.gsub(/[a-z\n]/,"")        #removes letters and newlines
-    line = line[0] << line[-1]            #concatenates the first digit with the last
+    line = line.gsub(/[a-z\n]/,"")        # removes letters and newlines
+    line = line[0] << line[-1]            # concatenates the first digit with the last
 
     sum += line.to_i
   end
