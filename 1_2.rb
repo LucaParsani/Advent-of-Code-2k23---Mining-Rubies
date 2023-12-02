@@ -29,7 +29,7 @@ while line
     line = wordsToNumbers(line)
     line = line.gsub(/[a-z\n]/,"")        # removes letters and newlines
     line = line[0] << line[-1]            # concatenates the first digit with the last
-    print line, "\n"
+
     sum += line.to_i
   end
 end
