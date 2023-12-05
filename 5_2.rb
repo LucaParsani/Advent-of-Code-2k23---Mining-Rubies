@@ -1,7 +1,7 @@
 
 
 
-def search_seed(seed)
+def search_seed(seed)      # analog to part one, starts with a seed and follows it to its distance
   file = File.new("C:\\Users\\luca\\Desktop\\input.txt", "r")
   line = file.readline
   found_link = false
@@ -30,16 +30,16 @@ end
 
 file = File.new("C:\\Users\\luca\\Desktop\\input.txt", "r")
 seeds_line = file.readline.gsub("seeds: ", "").split(" ").map(&:to_i)
-min_distance = Float::INFINITY
+min_distance = Float::INFINITY                    # sets the minimum distance to infinity so every distance found will update it
 i = 0
 until i == seeds_line.size
-  (0...seeds_line[i + 1]).each { |j|
-    distance = search_seed(seeds_line[0] + j)
-    if distance < min_distance
-      min_distance = distance
+  (0...seeds_line[i + 1]).each { |j|        # iterates a number of times equal to the second parameter of the pair
+    distance = search_seed(seeds_line[0] + j)     # and starting at the first parameter follows every seed to the distance
+    if distance < min_distance                    # if the distance is inferior to the current minimum
+      min_distance = distance                     # updates the minimum
     end
   }
-  i += 2
+  i += 2                                          # jumps to the next pair
 end
 
 print min_distance
