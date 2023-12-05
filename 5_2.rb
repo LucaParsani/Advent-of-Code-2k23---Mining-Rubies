@@ -1,4 +1,6 @@
 
+
+
 def search_seed(seed)
   file = File.new("C:\\Users\\luca\\Desktop\\input.txt", "r")
   line = file.readline
