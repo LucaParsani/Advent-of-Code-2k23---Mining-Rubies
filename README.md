@@ -13,3 +13,7 @@ The algorithms are not going to be optimized <br>
   - I'm getting used to the negative if clause, ```unless```. It's really handy, saves me writing a negative condition every time I need one. Also, for the fourth day in a row regexp substitution in strings saved me. All in all, pretty straightforward kata, if only I didn't lose 10 minutes debugging only to figure out the problem was i counted EOF as a card
 - Day 5:
   - Boy, this was tough. Part 1 went through like a breeze, but I didn't have the time to come up with a better solution for Part 2, so I ended up bruteforcing it. An ugly approach, I know, but I didn't want to waste my time on this, so I let the script run in background while I was working. On a side note, I found out the name variables shouldn't have uppercase letters per best practice, so I am starting to name them accordingly
+- Day 6:
+  - No comment on this one. Way too easy
+- Day 7:
+  - I lost a shit ton of time for a peculiarity of custom sort algorithms. Apparently, ```array.sort``` doesnt sort the array itself, but creates a sorted copy. So i had to add a ```!``` to overwrite the original with the copy, ```array.sort!```. I am sooo mad for this lol. Also, to solve Part 2 I removed the Js first thing, and I got the wrong result because at first I didn't notice JJJJJ was possible. Oops 
