@@ -17,3 +17,5 @@ The algorithms are not going to be optimized and/or could be extremely horrifyin
   - No comment on this one. Way too easy
 - Day 7:
   - I lost a shit ton of time for a peculiarity of custom sort algorithms. Apparently, ```array.sort``` doesnt sort the array itself, but creates a sorted copy. So i had to add a ```!``` to overwrite the original with the copy, ```array.sort!```. I am sooo mad for this lol
+- Day 8:
+  - Nice one. Despite the stack limitations not allowing me to make the search recursive, pretty clean code. Thankfully the right idea for Part 2 came up immediately, so no effort there either, despite the gargantuan solution 
