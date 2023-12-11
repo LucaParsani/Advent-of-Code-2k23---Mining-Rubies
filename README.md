@@ -21,3 +21,8 @@ The algorithms are not going to be optimized and/or could be extremely horrifyin
   - Nice one. Despite the stack limitations not allowing me to make the search recursive, pretty clean code. Thankfully the right idea for Part 2 came up immediately, so no effort there either, despite the gargantuan solution 
 - Day 9:
   - I expected this one to be tricky, but it wasn't at all. First time I used the ```.map``` method in Ruby, does its job nicely. Might come in handy when the data structures will become more complex
+- Day 10:
+  - This might just be my most embarrassing AoC yet. Not only the code is clunky and requires manual input for the starting point (I told myself I would update it when I had finished Part 2), I also struggled a lot on Part 2. I was so tired and I couldn't come up with a solution, although I was close enough: the small solved inputs worked fine, but the puzzle input itself didn't. I will try to solve it again when i'm at full speed. My guess it's to implement a flooding algorithm, tuned up a bit to fit the specifics
+  - //TODO
+- Day 11:
+  - After yesterday's defeat we're back with matrix's. This time wasn't so difficult though, so I managed to solve it with relatively clean code. I was let down by the ```.between?()``` method, I thought it worked even with the bigger number first, though a simple mirrored one in a OR condition worked just fine. Overall, pretty fun kata
