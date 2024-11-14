@@ -4,9 +4,9 @@ This year I decided to try solving the Advent of Code using only Ruby, let's see
 The algorithms are not going to be optimized and/or could be extremely horrifying and dirty, I am trying to take a script-like approach and I will try to solve them with the least effort possible while having fun<br>
 
 - Day 1:
-  - The string manipulation using regular expressions is waaaaaaay efficient. Almost made this too easy, looking forward to unravel other Ruby wonders
+  - String manipulation using regular expressions is waaaaaaay efficient. Almost made this too easy, looking forward to unravel other Ruby wonders
 - Day 2:
-  - It's kinda weird that the best practice for methods is not ```return variable``` but just ```variable```, i'll live with that. Also, I lost a loooot of time because i forgot comparisons with regular expressions are made with ```=~``` and not ```==```. Still, I'm really enjoying this language
+  - It's kinda weird that the best practice for methods is not ```return variable``` but just ```variable```, but i'll live with that. Also, I lost a loooot of time because i forgot comparisons with regular expressions are made with ```=~``` and not ```==```. Still, I'm really enjoying this language
 - Day 3:
   - The ```.each_with_index``` method for iteration made the difference, really sweet. Overall, a lot of code in this exercise but it wasn't too difficult, somehow I lost very little time debugging
 - Day 4:
@@ -16,13 +16,15 @@ The algorithms are not going to be optimized and/or could be extremely horrifyin
 - Day 6:
   - No comment on this one. Way too easy
 - Day 7:
-  - I lost a shit ton of time for a peculiarity of custom sort algorithms. Apparently, ```array.sort``` doesnt sort the array itself, but creates a sorted copy. So i had to add a ```!``` to overwrite the original with the copy, ```array.sort!```. I am sooo mad for this lol
+  - I lost a shit ton of time because of a peculiarity of custom sort algorithms. Apparently, ```array.sort``` doesnt sort the array itself, but creates a sorted copy. So i had to add a ```!``` to overwrite the original with the copy, ```array.sort!```. I am sooo mad for this lol
 - Day 8:
   - Nice one. Despite the stack limitations not allowing me to make the search recursive, pretty clean code. Thankfully the right idea for Part 2 came up immediately, so no effort there either, despite the gargantuan solution 
 - Day 9:
   - I expected this one to be tricky, but it wasn't at all. First time I used the ```.map``` method in Ruby, does its job nicely. Might come in handy when the data structures will become more complex
 - Day 10:
-  - This might just be my most embarrassing AoC kata yet. Not only the code is clunky and requires manual input for the starting point (I told myself I would update it when I had finished Part 2), I also struggled a lot on Part 2. I was so tired I couldn't come up with a solution, although I was close enough: the small solved inputs worked fine, but the puzzle input itself didn't. I will try to solve it again when i'm at full speed. My guess it's to implement a flooding algorithm, tuned up a bit to fit the specifics
+  - This might just be my most embarrassing AoC kata yet. Not only the code I wrote is clunky and requires manual input for the starting point (I told myself I would update it when I had finished Part 2), I also struggled a lot on Part 2. I was so tired I couldn't come up with a solution, although I was close enough: the small solved inputs worked fine, but the puzzle input itself didn't. I will try to solve it again when i'm at full speed. My guess it's I have to implement a flooding algorithm, tuned up a bit to fit the specifics
   - //TODO
 - Day 11:
   - After yesterday's defeat we're back with matrix's. This time wasn't so difficult though, so I managed to solve it with relatively clean code. I was let down by the ```.between?()``` method, I thought it worked even with the bigger number first, though a simple mirrored one in an OR condition worked just fine. Overall, pretty fun kata
+ 
+(Sadly I got so caught up in work I couldn't continue, such a shame...)
